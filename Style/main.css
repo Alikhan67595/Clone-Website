@@ -1,0 +1,112 @@
+/* ye jo box-main class wali div hai is mai body ka all content hai */
+.box-main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px 20px;
+    margin-top: 20px;
+}
+
+/* ye jo box wali class hai is ke andar color boxes ka all content hai */
+/* .box {
+    height: 230px;
+    width: 340px;
+    background-color: #fff;
+    border-radius: 8px;
+} */
+
+.box-link {
+    height: 230px;
+    width: 340px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+
+/* Mid Content Working */
+
+
+/* ye jo contain class hai ye color boxes kai center mai nav ki tarha ka ek div hai */
+.contain {
+    width: 100%;
+    height: 56px;
+    background-color: #0c2461;
+    border-radius: 5px;
+}
+
+/* ye jo ali2 class hai contain class wali div kai andar hai. or ali2 ul kai andar li hai */
+
+.ali2 {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+/* ye jo count class hai ye color boxes kai baad ai gi end mai. or si kai andar link hai */
+.count {
+    display: flex;
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ye Media Query Mobile se large screen ke Liay Hia */
+
+@media only screen and (min-width:455px) {
+    .box-main {
+        justify-content: space-between;
+    }
+
+}
+
+/* ye Media Query Mobile ke Liay Hia */
+
+@media only screen and (max-width:455px) {
+
+    .contain {
+        display: none;
+    }
+
+
+    .box-link {
+        width: 90%;
+    }
+
+    .box-link {
+        margin: auto;
+        width: 300px;
+    }
+
+    .box-main{
+        margin-top: 10px;
+    }
+
+}
+
+
+/* ye Media Query Tablet ke Liay Hia */
+
+@media only screen and (max-width:768px) {
+
+
+    .box {
+        justify-content: space-around;
+        margin: auto;
+
+    }
+
+    .count{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 80%;
+        letter-spacing: 0.5px;
+        margin: auto;
+    }
+
+}

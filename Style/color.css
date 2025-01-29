@@ -1,0 +1,77 @@
+/* ye jo color class hai is kai andar all color kia div hai  */
+
+.color {
+    display: inline block;
+    height: 180px;
+    width: 320px;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+/* ye jo color-content class hai ye color wali class ka child hai. is kai andar all color ki div hai */
+
+.color-content {
+    float: left;
+    width: 20%;
+    height: 25%;
+}
+
+/* ye color-emoji class color box kai andar ek div hai jis kai andar text or emoji hai */
+
+.color-emoji {
+    width: 100%;
+    height: auto;
+    float: left;
+    position: relative;
+    top: 5px;
+    margin-top: 2.5px;
+}
+
+
+
+/* Ye Jo emoji class hai ye color box jo hai in kai andar ki emoji hai */
+
+.emoji {
+    position: absolute;
+    right: 0%;
+    font-size: 20px;
+    margin-right: 4px;
+    color: black;
+    font-weight: 600;
+}
+
+
+/* Ye Jo h6 class hai ye color box jo hai in kai andar ka text hai */
+
+.h6 {
+    font-size: 20px;
+    color: black;
+    font-weight: 450;
+    letter-spacing: 1.5px;
+    margin-left: 2px;
+    margin-top: auto;
+}
+
+/* ye Media Query Mobile ke Liay Hia */
+
+@media only screen and (max-width:455px) {
+
+
+    /* ye jo color class hai ye ek box hai is ko mobile kai liay width di hai */
+    .color {
+        width: 280px;
+    }
+
+    .h6{
+        font-size: 16px;
+    }
+
+    .emoji{
+        font-size: 16px;
+    }
+
+    .color-emoji{
+        margin-top:5px ;
+    }
+}

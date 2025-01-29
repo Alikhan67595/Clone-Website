@@ -1,0 +1,132 @@
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    color: #ffffff;
+    font-family: Barlow;
+    user-select: none;
+}
+
+/* Body css */
+
+body{
+    background-image: url(./assets/stars-opacity.0979c1.svg);
+    background-repeat: repeat;
+    background-color: #3c40c6;
+    overflow-y: auto;
+}
+
+/* Main Body Css */
+
+nav {
+    height: 105px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.main {
+    width: 1200px;
+    height: auto;
+    margin: auto;
+}
+
+/* ye jo logo class hai ye nav bar kai andar hai */
+
+.logo {
+    font-size: 170%;
+    color: #ffffff;
+    letter-spacing: 3.5px;
+    font-weight: 500;
+    text-shadow: 0 1px, 1px 0, 1px 1px;
+}
+
+/* is logo kai andar jo link hai is per pseudo selector lagaya hai active wala */
+
+.logo a:active {
+    font-size: 90%;
+    transition: all .2s;
+    transition-behavior: normal;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    transition-property: all;
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+}
+
+/* ye jo nav bar kai andar ul hai is ki class ka name ali hai */
+.ali {
+    display: flex;
+    list-style-type: none;
+    position: absolute;
+    right: 0%;
+    margin-left: 2px;
+}
+
+
+nav ul li div a {
+    margin: 0 2px 0 40px;
+    font-size: 130%;
+    font-weight: 450;
+    letter-spacing: 2.5px;
+}
+
+
+/* Ye do link per pseudo selector lagaya hai active wala */
+
+.box1:active .link1:active {
+    font-size: 100%;
+    transition: all .2s;
+    transition-behavior: normal;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    transition-property: all;
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+}
+
+.box2:active .link2:active {
+    font-size: 100%;
+    transition: all .2s;
+    transition-behavior: normal;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    transition-property: all;
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+}
+
+
+
+/* mobile Media Query  (max-width:455px)*/
+
+@media only screen and (max-width:455px) {
+    
+    .main {
+        width: 100%;
+        height: 999px;
+        margin: auto;
+    }
+    
+    .logo {
+        margin-left: 9%;
+        font-size: 140%;
+    }
+    nav {
+        height: 90px;}
+}
+
+/* Tablet Media Query  (max-width:710px)*/
+
+@media only screen and (max-width:710px) {
+
+    nav ul li div a {
+        display: none
+    }
+
+}

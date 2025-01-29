@@ -1,0 +1,170 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    font-family: barlow;
+    user-select: none;
+    scrollbar-width: none;
+    
+}
+
+/* Nav Bar Css */
+
+nav{
+
+    width: 100%;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+span{
+    font-size: 20px;
+    margin: 16px;
+    font-weight: 600;
+}
+
+/* Nav Kai Center mai jo trxt hai wo ye hai */
+
+.title{
+    background-color: black;
+    color: white;
+    padding: 5px 40px;
+    border-radius: 5px;
+    letter-spacing: 2px;
+}
+
+/* ye jo color-body wali jo class hai is kai andar all colors ki div hai */
+
+.color-body{
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    width: 100%;
+    row-gap: 0%;
+    
+}
+
+/* ye jo color-page wali class hai. ye color kai boxes hai */
+
+.color-page1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+        width:20%;
+        height: 139px;
+}
+
+/* ye jo copy-text wali class hai. ye box kai andar ka text hai. or ye is ki CSS hai */
+
+.color-text{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    margin: 0 7px 4px 0;
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+
+    /* ancor Tag Css */
+
+a{
+    text-decoration: none;
+    color: #000;
+    position: relative;
+}
+a:active{
+    color: #000;
+}
+
+
+/* Tablet Medai Query */
+
+@media only screen and (max-width:768px){
+
+    .title{
+        font-size: 15px;
+    }
+
+    .color-text{
+        font-size: 1em;
+    }
+
+    .copy-logo{
+        color: #ffffff00;
+    }
+    
+    .copy-logo:hover{
+        font-size: 0px;
+        /* font-weight: 400; */
+        /* border: 2px solid rgba(255, 255, 255, 0.23); */
+        /* padding: 8px 30px; */
+        /* border-radius: 7px; */
+        color: rgba(255, 255, 255, 0);
+        /* cursor: pointer */
+        
+    }
+   
+    
+}
+
+@media only screen and (min-width:768px){
+    .copy-logo{
+        color: #ffffff00;
+    }
+    
+    .copy-logo:hover{
+        font-size: 25px;
+        font-weight: 400;
+        border: 2px solid rgba(255, 255, 255, 0.23);
+        padding: 8px 30px;
+        border-radius: 7px;
+        color: white;
+        cursor: pointer
+        
+    }
+
+}
+
+
+    /* Mobile Medai Query */
+
+@media only screen and (max-width:455px){
+    
+    nav{
+        background-color: #dedddd;
+    }
+
+    .color-text{
+        display: none;
+    }
+
+    nav span{
+        font-size: 15px;
+        margin: 0% 14px;
+    }
+    img{
+        display: none;
+    }
+
+    .color-page1{
+        width: 25%;
+    }
+
+    .title{
+        display: none;
+        /* background-color: black;
+        color: white;
+        padding: 5px 20px;
+        border-radius: 5px;
+        letter-spacing: 1.5px; */
+
+    }
+
+}

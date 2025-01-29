@@ -1,0 +1,141 @@
+/* body CSS */
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #1f1d1d;
+    color: #333;
+}
+
+/* Nav Bar CSS */
+a{
+    padding: 8px;
+    border-radius: 8px;
+}
+
+a:hover{
+    color: rgb(0, 0, 0);
+    background-color: aqua;
+
+}
+
+nav {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    padding: 20px 20px;
+    z-index: 1000;
+    box-shadow: 0 -1px 15px rgba(0, 0, 10, 10);
+    background-color: black;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+     padding: 20px; 
+    color: white;
+    position: fixed;
+    margin-top: 0%;
+    z-index: 1000;
+
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #f4f4f4;
+}
+
+header nav {
+    margin-top: 0%;
+    width: 100%;
+}
+
+header nav ul li {
+    margin-left: 2%;
+    padding-left: 5%;
+}
+
+header {
+    font-size: 100%;
+    padding-left: 0%;
+    margin-left: 0%;
+}
+
+     /* flex images */
+
+main{
+    display: flex;
+    margin-top: 8%;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    column-gap: 8%;
+    row-gap: 30px;
+}
+
+.image{
+    height: 40%;
+    width: 40%;
+    border-radius: 20px;
+    
+    
+}
+@media (max-width: 600px) {
+    
+    main{
+        justify-content: center;
+        align-items: center;
+        margin-top: 20%;
+    }
+    .image{
+        /* margin-top: 10%; */
+        height: 90%;
+        width: 90%;
+    }
+    
+    nav{
+        padding-left: 0%;
+    }
+    li{
+        margin-left: 0%;
+        justify-content: flex-start;
+        font-size: 80%;
+        
+    }
+    ul{
+        margin-left: 0%;
+    }
+    
+}
+
+@media (min-width: 600px){
+    
+    
+    
+    .image:hover{
+        height: 40.5%;
+        width: 40.5%;
+        /* border: 3px solid yellow; */
+        box-shadow: 0 -1px 15px rgba(255, 255, 255, 0.522);
+        
+    }
+
+    .image{
+
+        border-radius: 20px;
+    }
+}
