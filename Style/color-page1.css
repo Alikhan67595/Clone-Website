@@ -41,7 +41,7 @@ span{
 .color-body{
     display: flex;
     flex-wrap: wrap;
-    height: auto;
+    height: 100vh;
     width: 100%;
     row-gap: 0%;
     
@@ -55,7 +55,7 @@ span{
     justify-content: center;
     position: relative;
         width:20%;
-        height: 139px;
+        height: 25%;
         
 }
 
@@ -121,7 +121,7 @@ a:active{
     
 }
 
-@media only screen and (min-width:768px){
+@media only screen and (min-width:1024px){
     .copy-logo{
         color: #ffffff00;
     }
@@ -135,24 +135,74 @@ a:active{
         color: white;
         cursor: pointer
         
-    }  */
-
-    .color-page1:hover{
-        cursor: pointer;
-        .copy-logo{
-            font-size: 25px;
-            font-weight: 400;
-            border: 2px solid rgba(255, 255, 255, 0.23);
-            padding: 8px 30px;
-            border-radius: 7px;
-            color: white;
-            cursor: pointer
+        }  */
+        
+        .color-page1:hover{
+            cursor: pointer;
+            .copy-logo{
+                font-size: 2rem;
+                font-weight: 500;
+                border: 2px solid rgba(255, 255, 255, 0.23);
+                padding: 8px 30px;
+                border-radius: 7px;
+                color: white;
+                cursor: pointer
+                
+            }
             
         }
-
+        
+    }
+    
+    
+    @media only screen and (max-width:1440px){
+        .color-page1:hover{
+            cursor: pointer;
+            .copy-logo{
+                font-size: 1.5rem;
+                font-weight: 500;
+                border: 2px solid rgba(255, 255, 255, 0.23);
+                padding: 8px 30px;
+                border-radius: 7px;
+                color: white;
+                cursor: pointer
+                
+            }
+            
+        }
+    }
+    @media only screen and (max-width:768px){
+        /* .color-page1:hover{
+        cursor: pointer;
+        .copy-logo{
+            font-size: 1rem;
+            font-weight: 400;}
+        
+        } */
+         .copy-logo{display: none;}
     }
 
-}
+    @media only screen and (min-width:768px){
+        .copy-logo{
+            color: #ffffff00;
+        }
+      
+        .color-page1:hover{
+            cursor: pointer;
+            .copy-logo{
+                font-weight: 500;
+                border: 2px solid rgba(255, 255, 255, 0.23);
+                padding: 8px 30px;
+                border-radius: 7px;
+                color: white;
+                cursor: pointer
+                
+            }
+    
+        }
+    
+    }
+
 
 
     /* Mobile Medai Query */
